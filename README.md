@@ -1,4 +1,7 @@
-# Open a folder in PhpStorm or PyCharm CE from the terminal
-If you are familiar with vscode you've probably used the command `code $PATH` to open your projects.
+# JetBrains Terminal - MacOS 11.4
+Same dynamic as with vscode but working with the JetBrains Suite.
 
-Everything will be the same but working with the JetBrains Suite 
+## Opening a folder
+Default IDE : PhpStorm
+
+Use `code $PATH [--py|--python ] [--php]` to open your projects.
