@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Default IDE
+PROGRAMA="PhpStorm"
+
+# Change IDE with flags
+for arg in "$@" 
+do
+    case $arg in
+        --py|--python)
+        PROGRAMA="PyCharm CE"
+        shift
+        ;;
+    esac
+done
+
+# Assign default path if not given
+if [ -z $1 ]; then
+    set -- "."
+fi
+
+open $1 -a "$PROGRAMA"
